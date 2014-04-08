@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="CHwork"
+  id="myeclipse.1390462043163"
+  context-root="/CHwork"
+  j2ee-spec="6.0"
+  archive="CHwork.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

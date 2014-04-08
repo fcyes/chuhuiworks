@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>first.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    
+	<link rel="stylesheet" type="text/css" href="css/first.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.jticker.js"></script>
+	<script src="js/chuhuiwork.js"> </script>
+	
+<script type="text/javascript">
+  $(document).ready(
+ 
+  qwe()
+  
+  );
+  function qwe(){
+  var event = event || window.event;
+  event.resizeTo(1000, 500); }
+</script>
+	
+	<script type="text/javascript">
+	  $(document).ready(
+	    function layout(){
+	    if (window != top) top.location.href = location.href;
+self.resizeTo(800,600);
+	    var h = document.documentElement.clientHeight;
+	    var w = document.documentElement.clientWidth;
+	    //logo
+	    $("#wrapper").css({"left":(w-1000)/2+"px"});
+	    $("#logo_page").css({"height":h});
+	    $("#footer").css({"top":h-20+"px","left":-(w-1000)/2+"px","width":w});
+	    $("#about_page").css({"height":h,"width":w,"margin-left":-(w-1000)/2+"px","top":h+"px","background-size":w+"px"+" "+h+"px"});
+	    $("#service_page").css({"height":h,"width":w,"margin-left":-(w-1000)/2+w+"px","top":0+"px","background-size":w+"px"+" "+h+"px"});
+	    $("#works_page").css({"height":h,"width":w,"margin-left":-(w-1000)/2+"px","top":-h+"px","background-size":w+"px"+" "+h+"px"});
+	    $("#contact_page").css({"height":h,"width":w,"margin-left":-(w-1000)/2-w+"px","background-size":w+"px"+" "+h+"px"});
+	    $("#message_page").css({"height":h,"width":w,"margin-left":-(w-1000)/2+"px",/* "top":2*h+"px", */"background-size":w+"px"+" "+h+"px"});
+	    $("#car_road").css({"left":-(w-1000)/2-1425+"px","top":h/2+50+"px"});
+	    //service
+	    $("#service_wrapper").css({"left":w/2-455+"px","top":25+"px"});
+        $("#process").css({"left":w/2-346+"px","top":1080+"px"});
+        $("#serviceback").css({"left":w/2+460+"px","top":-50+"px"});
+        $("#s2_1").css({"left":w/2-348+"px","top":h/2-123+"px"});
+        $("#s2_2").css({"left":w/2+"px","top":h/2-123+"px"});
+        //about    
+        $("#about1").css({"left":w/2-1041+"px","top":h/2});
+        $("#about2").css({"left":w/2-390+"px","top":h/2-883+"px"});
+        $("#aboutwrapper").css({"left":w/2-400+1271+"px","top":h/2-335+"px"});
+        $("#aboutback").css({"left":w/2-400+271+740-46+"px","top":-50+"px","z-index":"99"});
+        $("#works1").css({"left":w/2-241+"px","top":h/2});
+        $("#works2").css({"left":w/2,"top":h/2-350+"px"});
+        $("#sc_menu_wrapper").css({"left":w/2-320+"px","top":0+"px","height":h});
+        $("#worksback").css({"left":w/2+327+"px","top":-100+"px"});
+        
+	  });     
+	</script>
+  </head>
+  <body scroll="no">  
+    <div id="wrapper">
+      <div id="loge_page" >
+        <div id="logo1">
+          <div id="car_road">
+            <div id="about_car">
+              <img id="gas_about" src="image/firstpage/gas_about.png"></img>
+              <input id="about_car_img" type="image" src="image/firstpage/car_about.png" onclick="logo_to_about();" value="about" />
+            </div>
+            <div id="works_car" >
+              <img id="gas_works" src="image/firstpage/gas_works.png"></img>
+              <input id="works_car_img" type="image" src="image/firstpage/car_works.png" onclick="logo_to_works();" value="service"/>
+            </div>
+            <div id="service_car" >
+              <img id="gas_service" src="image/firstpage/gas_service.png"></img>
+              <input id="service_car_img" type="image" src="image/firstpage/car_service.png" onclick="logo_to_service();" value="works"/>
+            </div>
+            <div id="contact_car" >
+              <img id="gas_contact" src="image/firstpage/gas_contact.png"></img>
+              <input id="contact_car_img" type="image" src="image/firstpage/car_contact.png" onclick="logo_to_contact();" value="contact"/>
+            </div>
+            <div id="goabout" onclick="logo_to_about();" style="position: absolute;left:432px;top:38px; height:34px;width:153px;z-index: 2"></div>
+            <div id="goworks" onclick="logo_to_works();" style="position: absolute;left:585px;top:102px; height:34px;width:135px;z-index: 2"></div>
+            <div id="goservice" onclick="logo_to_service();" style="position: absolute;left:728px;top:164px; height:34px;width:178px;z-index: 2"></div>
+            <div id="gocontact" onclick="logo_to_contact();" style="position: absolute;left:915px;top:230px;height:34px;width:210px;z-index: 2"></div>
+            
+            
+            <img id="howto" src="image/firstpage/howto.png" style="position: absolute;left:715px;top:230px; display:none;"></img>
+            <img id="contactus" src="image/firstpage/contactus.png" style="position: absolute;left:1145px;top:230px; display:none;"></img>
+            <img id="our" src="image/firstpage/our.png" style="position: absolute;left:475px;top:102px; display:none;"></img>
+            <img id="aboutus" src="image/firstpage/aboutus.png" style="position: absolute;left:615px;top:38px; display:none;"></img>
+            <img id="provided" src="image/firstpage/provided.png" style="position: absolute;left:478px;top:164px; display:none;"></img>
+            <img id="car_road1" src="image/firstpage/car_road.png" style="position: absolute;top:37px"></img>
+            <script type="text/javascript">
+            $(document).ready(
+              $("#about_car").add("#goabout").mouseover(function(){
+                $("#aboutus").show();
+                var car_swing = setInterval(function(){
+                  $("#about_car_img").animate({left:"31px",top:"-6px"},100).animate({left:"29px",top:"-4px"},100).animate({left:"30px",top:"-5px"},100);
+                },200);
+    	        var gas = setInterval(function gas(){
+                  $("#gas_about").fadeOut(150).fadeIn(150);
+                }, 300+Math.random()*700);
+                $("#about_car").add("#goabout").mouseleave(function () {
+                  $("#aboutus").hide();
+				  clearInterval(gas);
+				  clearInterval(car_swing);
+			    });
+              })
+            );
+            $(document).ready(
+              $("#works_car").add("#goworks").mouseover(function(){
+                $("#our").show();
+                var car_swing = setInterval(function(){
+                  $("#works_car_img").animate({left:"31px",top:"-6px"},100).animate({left:"29px",top:"-4px"},100).animate({left:"30px",top:"-5px"},100);
+                },400);
+    	        var gas = setInterval(function gas(){
+                  $("#gas_works").fadeOut(150).fadeIn(150);
+                }, 300+Math.random()*700);
+                $("#works_car").add("#goworks").mouseleave(function () {
+                  $("#our").hide();
+				  clearInterval(gas);
+				  clearInterval(car_swing);
+			    });
+              })
+            );
+            $(document).ready(
+              $("#service_car").add("#goservice").mouseover(function(){
+                $("#provided").show();
+                var car_swing = setInterval(function(){
+                  $("#service_car_img").animate({left:"31px",top:"-6px"},100).animate({left:"29px",top:"-4px"},100).animate({left:"30px",top:"-5px"},100);
+                },400);
+    	        var gas = setInterval(function gas(){
+                  $("#gas_service").fadeOut(150).fadeIn(150);
+                }, 300+Math.random()*700);
+                $("#service_car").add("#goservice").mouseleave(function () {
+                  $("#provided").hide();
+				  clearInterval(gas);
+				  clearInterval(car_swing);
+			    });
+              })
+            );
+            $(document).ready(
+              $("#contact_car").add("#gocontact").mouseover(function(){
+                $("#howto").show();
+                $("#contactus").show();
+                var car_swing = setInterval(function(){
+                  $("#contact_car_img").animate({left:"31px",top:"-6px"},100).animate({left:"29px",top:"-4px"},100).animate({left:"30px",top:"-5px"},100);
+                },400);
+    	        var gas = setInterval(function gas(){
+                  $("#gas_contact").fadeOut(150).fadeIn(150);
+                }, 300+Math.random()*700);
+                $("#contact_car").add("#gocontact").mouseleave(function () {
+                  $("#howto").hide();
+                  $("#contactus").hide();
+				  clearInterval(gas);
+				  clearInterval(car_swing);
+			    });
+              })
+            );
+            </script>
+          </div>
+          <div id="logo" >
+            <img id="1_1" src="image/firstpage/1_1.png" style="position: absolute; left: -105.5px; top: -227px; "draggable="false"></img>
+            <img id="1_2" src="image/firstpage/1_2.png" style="position: absolute; left: -159px; top: 338px;" draggable="false"></img>
+            <img id="1_3" src="image/firstpage/1_3.png" style="position: absolute; left: -192px; top: -85px;" draggable="false"></img>
+            <img id="1_4" src="image/firstpage/1_4.png" style="position: absolute; left: 892px; top: -307px;" draggable="false"></img>
+            <img id="1_5" src="image/firstpage/1_5.png" style="position: absolute; left: 226px; top: -258px;" draggable="false"></img>
+            <img id="1_6" src="image/firstpage/1_6.png" style="position: absolute; left: -265px; top: 25px;" draggable="false"></img>
+            <img id="1_7" src="image/firstpage/1_7.png" style="position: absolute; left: -212px; top: 826px;" draggable="false"></img>
+            <img id="1_8" src="image/firstpage/1_8.png" style="position: absolute; left: 317px; top: -338px;" draggable="false"></img>
+            <img id="1_9" src="image/firstpage/1_9.png" style="position: absolute; left: -249px; top: 538px;" draggable="false"></img>
+            <img id="1_10" src="image/firstpage/1_10.png" style="position: absolute; left: -297px; top: 865px;" draggable="false"></img>
+            <img id="2_1" src="image/firstpage/2_1.png" style="position: absolute; left: 1253px; top: -258px;" draggable="false"></img>
+            <img id="2_2" src="image/firstpage/2_2.png" style="position: absolute; left: 1248px; top: -258px;" draggable="false"></img>
+            <img id="2_3" src="image/firstpage/2_3.png" style="position: absolute; left: 1353px; top: -483px;" draggable="false"></img>
+            <img id="2_4" src="image/firstpage/2_4.png" style="position: absolute; left: 1239px; top: -283px;" draggable="false"></img>
+            <img id="2_5" src="image/firstpage/2_5.png" style="position: absolute; left: 893px; top: -227px;" draggable="false"></img>
+            <img id="2_6" src="image/firstpage/2_6.png" style="position: absolute; left: 881px; top: -225px;" draggable="false"></img>
+            <img id="2_7" src="image/firstpage/2_7.png" style="position: absolute; left: 1336.8px; top: 338px;" draggable="false"></img>
+            <img id="2_8" src="image/firstpage/2_8.png" style="position: absolute; left: 1380px; top: 132px;" draggable="false"></img>
+            <img id="2_9" src="image/firstpage/2_9.png" style="position: absolute; left: 1260px; top: 461px;" draggable="false"></img>
+            <img id="2_10" src="image/firstpage/2_10.png" style="position: absolute; left: 1349px; top: 61px;" draggable="false"></img>
+            <img id="2_11" src="image/firstpage/2_11.png" style="position: absolute; left: 1249.5px; top: -81px;" draggable="false"></img>
+            <img id="2_12" src="image/firstpage/2_12.png" style="position: absolute; left: -383px; top: 1093px;" draggable="false"></img>
+            <img id="2_13" src="image/firstpage/2_13.png" style="position: absolute; left: 1370px; top: 93px;" draggable="false"></img>
+            <img id="2_14" src="image/firstpage/2_14.png" style="position: absolute; left: -336px; top: 827px;" draggable="false"></img>
+            <img id="3_1" src="image/firstpage/3_1.png" style="position: absolute; left: -383px; top: 593px;" draggable="false"></img>
+            <img id="3_2" src="image/firstpage/3_2.png" style="position: absolute; left: 445px; top: 925px;" draggable="false"></img>
+            <img id="3_3" src="image/firstpage/3_3.png" style="position: absolute; left: 6px; top: 924px;" draggable="false"></img> 
+            <img id="4_1" src="image/firstpage/4_1.png" style="position: absolute; left: 477px; top: 1035px;" draggable="false"></img>
+            <img id="4_2" src="image/firstpage/4_2.png" style="position: absolute; left: 840px; top: 910px;" draggable="false"></img>
+            <img id="4_3" src="image/firstpage/4_3.png" style="position: absolute; left: 958px; top: -100px;" draggable="false"></img>
+            <img id="4_4" src="image/firstpage/4_4.png" style="position: absolute; left: 1265px; top: 225px;" draggable="false"></img>
+            <img id="4_5" src="image/firstpage/4_5.png" style="position: absolute; left: 997px; top: 825px;" draggable="false"></img>
+            <img id="4_6" src="image/firstpage/4_6.png" style="position: absolute; left: 1297px; top: 5px;" draggable="false"></img>
+            <img id="4_7" src="image/firstpage/4_7.png" style="position: absolute; left: 1297px; top: 6px;" draggable="false"></img> 
+            <img id="5_1" src="image/firstpage/5_1.png" style="position: absolute; left: 1260px; top: -200px;" draggable="false"></img>
+            <img id="5_2" src="image/firstpage/5_2.png" style="position: absolute; left: 1204px; top: -147px;" draggable="false"></img>
+            <img id="5_3" src="image/firstpage/5_3.png" style="position: absolute; left: 1210px; top: 47px;" draggable="false"></img>
+            <img id="5_4" src="image/firstpage/5_4.png" style="position: absolute; left: 1297px; top: 175px;" draggable="false"></img>
+            <img id="5_5" src="image/firstpage/5_5.png" style="position: absolute; left: 1212px; top: 372px;" draggable="false"></img>
+            <img id="5_6" src="image/firstpage/5_6.png" style="position: absolute; left: 1255px; top: 575px;" draggable="false"></img>
+            <img id="5_7" src="image/firstpage/5_7.png" style="position: absolute; left: 1288px; top: 716px;" draggable="false"></img>
+            <img id="5_8" src="image/firstpage/5_8.png" style="position: absolute; left: 1280px; top: 954px;" draggable="false"></img>
+            <img id="6_1" src="image/firstpage/6_1.png" style="position: absolute; left: -10px; top: 440px; display: none;" draggable="false"></img>
+            <img id="6_2" src="image/firstpage/6_2.png" style="position: absolute; left: 402px; top: 545px; display: none;" draggable="false"></img>
+            <img id="6_3" src="image/firstpage/6_3.png" style="position: absolute; left: 664px; top: 300px; display: none;" draggable="false"></img>
+           <script type="text/javascript">
+             $(document).ready(logomove());
+           </script>
+          </div>
+          
+        </div>
+        <footer id="footer"><p id="p1">储慧工作室|©2014</p> <p id="p2">Design By FengChu &amp; ZhaoHuiling</p></footer>
+      </div>
+      <div id="about_page" style="background-image: url('image/about/backimg_about.jpg');">
+        <div id="about">
+          <img id="about1" src="image/about/1_1.png" style="position: absolute;"></img>
+          <img id="about2" src="image/about/1_2.png" style="position: absolute;"></img>
+          <img id="aboutback" class="back" src="image/about/1_about.png" onclick="about_to_logo();"></img>
+          <div id="aboutwrapper">
+            <div id="head"><img src="image/about/head.jpg"></img></div>
+            <img src="image/about/about.png"></img>
+            
+          </div>
+        </div>
+         <script type="text/javascript">
+          $(document).ready(about()); 
+        </script> 
+      </div>
+      <div id="service_page" style="background-image: url('image/service/backimg_service.jpg');">
+        <div id="service" >
+          <img id="serviceback" class="back" src="image/service/1_services.png" onclick="service_to_logo();"></img>
+          <img id="s2_1" src="image/service/2_1.png" ></img>
+          <img id="s2_2" src="image/service/2_2.png" ></img>
+          <div id="service_wrapper">
+            <img id="serviceimg" src="image/service/1_0服务内容.jpg"></img>
+            <div id="stick"></div>
+            <div id="stick_title">
+              <img src="image/service/1_1.png" style="position: absolute; z-index: 1;"></img>
+              <span>服务内容</span>
+            </div >  
+            <div id="stick_process" >
+              <span style="background-image: url('image/service/back_small.png');top:0px;">一</span>
+              <span style="background-image: url('image/service/back_small.png');top:41px;">二</span>
+              <span style="background-image: url('image/service/back_small.png');top:82px;">三</span>
+              <span style="background-image: url('image/service/back_small.png');top:123px;">四</span>
+              <span style="background-image: url('image/service/back_small.png');top:287px;">八</span>
+              <span style="background-image: url('image/service/back_small.png');top:246px;">七</span>
+              <span style="background-image: url('image/service/back_small.png');top:205px;">六</span>
+              <span style="background-image: url('image/service/back_small.png');top:164px;">五</span>  
+            </div>
+            <div id="process_content">
+              <span><img src="image/service/1_1客户需求.jpg"></img></span>
+              <span><img src="image/service/1_2项目评估.jpg"></img></span>
+              <span><img src="image/service/1_3支付定金.jpg"></img></span>
+              <span><img src="image/service/1_4设计制作.jpg"></img></span>
+              <span><img src="image/service/1_8售后服务.jpg"></img></span>
+              <span><img src="image/service/1_7支付尾款.jpg"></img></span>
+              <span><img src="image/service/1_6客户确认.jpg"></img></span>
+              <span><img src="image/service/1_5方案修改.jpg"></img></span>  
+            </div>
+          </div>
+          <div id="process">
+            <ul class="pro-box">
+              <li>
+                <img src="image/service/3_1.png"></img>
+                <span style="background-color: #007475">1客户需求</span>
+              </li>
+              <li>
+                <img src="image/service/3_2.png"></img>
+                <span style="background-color: #ed2d00">2项目评估</span>
+              </li>
+              <li>
+                <img src="image/service/3_3.png"></img>
+                <span style="background-color: #671f82">3支付订金</span>
+              </li>
+              <li>
+                <img src="image/service/3_4.png"></img>
+                <span style="background-color: #cf2833">4设计制作</span>
+              </li>
+              <li>
+                <img src="image/service/3_8.png"></img>
+                <span style="background-color: #03955d">8售后服务</span>
+              </li>
+              <li>
+                <img src="image/service/3_7.png"></img>
+                <span style="background-color: #62a023">7支付尾款</span>
+              </li>
+              <li>
+                <img src="image/service/3_6.png"></img>
+                <span style="background-color: #006f79">6客户确认</span>
+              </li>
+              <li>
+                <img src="image/service/3_5.png"></img>
+                <span style="background-color: #671f80">5方案修改</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(service()); 
+        </script> 
+      </div>
+      <div id="works_page" style="background-image: url('image/works/backimg_works.jpg');">
+        <div id="works" >
+          <img id="works1" src="image/works/1_1.png" style="position:absolute;"></img>
+          <img id="works2" src="image/works/1_2.png" style="position:absolute;"></img>
+          <img id="worksback" class="back" src="image/works/1_works.png" onclick="works_to_logo()"></img>
+          <div id="sc_menu_wrapper" class="sc_menu_wrapper" style="position: absolute;left:450px;">
+            <input class="large" type="image" src="image/works/large.png">
+            <div id="sc_menu1" class="sc_menu" style="position: absolute;margin-left: 20px;z-index: 99;">   
+              <ul class="thumb">
+              <li><a class="fancybox" href="image/works/《自在》.jpg"><img src="image/works/《自在》.jpg"></img></a></li>
+              <li><a class="fancybox" href="image/works/《莺》.jpg"><img src="image/works/《莺》.jpg" style="margin-top: 215px;"></img></a></li>
+              <li><a class="fancybox" href="image/works/卡通头像.jpg"><img src="image/works/卡通头像.jpg" style="margin-top: 420px;"></img></a></li>
+              </ul>
+            </div>
+            <div class="sc_menu" style="position: absolute;margin-left: 330px;">
+              <ul class="thumb">
+              <li><a class="fancybox" title="12345" href="image/works/《自在》.jpg"><img src="image/works/《自在》.jpg" style="margin-top: 210px;"></img></a></li>
+              <li><a class="fancybox" href="image/works/《莺》.jpg"><img src="image/works/《莺》.jpg" style="margin-top: 420px;"></img></a></li>
+              <li><a class="fancybox" href="image/works/卡通头像.jpg"><img src="image/works/卡通头像.jpg" style="margin-top: 210px;"></img></a></li>
+              </ul>
+            </div>
+          </div>  
+          <script type="text/javascript">
+            $(document).ready(works());
+          </script>
+        </div>
+      </div>
+      <div id="contact_page" style="background-image: url('image/contact/backimg_contact.jpg');">
+        <div id="contact" >
+          <img id="contact1_1" src="image/contact/1_1.png" style="position:absolute; left:950px; top:830px;"></img>
+          <img id="contact1" src="image/contact/1.png" ></img>
+          <img id="contactback" class="back" src="image/contact/2_1.png" onclick="contact_to_logo()" ></img>
+          <div id="title">
+          <p>您可以通过以下方式找到我们</p>
+          </div>
+          <div id="content" >
+            <div id="ticker">
+              <div>
+                <p>T&nbsp;E&nbsp;L:&nbsp;&nbsp;151-1131-8086&nbsp;&nbsp;(Mrs赵)</p>
+                <p>&nbsp;&nbsp;Q&nbsp;Q:&nbsp;&nbsp;&nbsp;602841077</p>
+                <p>E-mail:&nbsp;&nbsp;602841077@qq.com</p>
+                <p>工作时间:&nbsp;&nbsp;&nbsp;8:00-22:00</p>
+                <p>工作地点:&nbsp;&nbsp;&nbsp;湖南&nbsp;&nbsp;&nbsp;长沙</p>
+              </div>
+            </div>
+            <span>www.wechat.com</span>
+            <span>www.weibo.com</span>
+            <span>www.renren.com</span>
+            <span>www.douban.com</span>
+            <ul class='bd-box'>
+              <li>
+                <a href=""> </a>
+                <img src="image/contact/wechat.png" />
+                <span>微信</span>
+              </li>
+              <li>
+                <a href=""> </a>
+                <img src="image/contact/weibo.png" />
+                <span>微博</span>
+              </li>
+              <li>
+                <a href=""> </a>
+                <img src="image/contact/renren.png" />
+                <span>人人</span>
+              </li>
+              <li>
+                <a href=""> </a>
+                <img src="image/contact/douban.png" />
+                <span>豆瓣</span>
+              </li> 
+            </ul>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(contact());
+        </script> 
+      </div>
+      <div id="message_page" style="background-image: url('image/message/backimg_message.jpg'); overflow: hidden;position:absolute;display: none;z-index: 98">
+        <div id="message" style="z-index: 99;">
+        </div>  
+      </div>  
+    </div>
+    
+  </body>
+</html>
